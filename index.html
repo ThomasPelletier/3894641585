@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Présentation de mon entreprise</title>
+  <title>Ynov Formula 1 racing team</title>
 
   <div class="header">
-    <img src="ynov-logo2.png" alt="Logo de l'Ynov Formula 1 racing team">
-    <h1>Ynov Formula 1 racing team</h1>
-    <p>L'équipe de Formule 1 la plus rapide et la plus innovante</p>
+    <div class="box"> 
+    <img src="ynov-logo-invert.png" alt="Logo de l'Ynov Formula 1 racing team">
+    </div>
+    <p>Notre passion, votre succès</p>
   </div>
 
   <div class="about">
-    <img src="team-photo.jpg" alt="Photo de l'équipe de l'Ynov Formula 1 racing team">
-    <p>L'Ynov Formula 1 racing team est une équipe de Formule 1 fictive créée par l'école d'ingénieurs Ynov. Nous mettons notre expertise technique et notre passion pour la vitesse au service de notre performance sur les circuits du monde entier.</p>
+    <h1>About</h1>
+    <p>A la base une école du numérique, Ynov se lance dans l’aventure de la formule 1 en 2023. Ynov Racing Team est une écurie de F1 qui a pour but de jouer les premières places au classement, tout en promouvant le nom Ynov qui se situe au 4 coins du mondes, grâce à nos écoles qui forment de futurs ingénieurs et qui offre des postes prestigieux à ses étudiants pour les plus doués d’entre eux. </p>
   </div>
 
   <div class="services">
     <div class="service">
-      <img src="engineering.jpg" alt="Image de l'ingénierie">
-      <h3>Ingénierie</h3>
-      <p>Notre équipe d'ingénieurs travaille sans relâche pour développer des technologies de pointe pour notre monoplace de Formule 1.</p>
+      <img src="engineering.png" alt="Aerodynamique">
+      <h3>Aerodynamique</h3>
+      <p>Notre équipe d'ingénieurs travaille sans relâche pour développer des technologies de pointe pour notre monoplace de Formule 1 au niveau aerodynamique. La filière aérodynamique est un fer de lance de l'école et nos résultats dans cette compétition doivent nous permettre de démontrer notre excellence dans ce domaine aux yeux du monde entier.</p>
       <button>En savoir plus</button>
     </div>
     <div class="service">
-      <img src="racing.jpg" alt="Image de la compétition">
+      <img src="racing.png" alt="Compétition">
       <h3>Compétition</h3>
-      <p>Notre équipe de pilotes et de mécaniciens se donne à 100% lors de chaque grand prix pour remporter la victoire.</p>
+      <p>Notre équipe de pilotes et de mécaniciens se donne à 100% tout au long de la saison pour fiabiliser et améliorer les performances de monoplace. Des ingénieurs de courses, aux mécaniciens en passant par les équipes présentes à l'usine, tous travaillent à un objectif commun: la performance.</p>
       <button>En savoir plus</button>
     </div>
-  </div>
-
-  <div class="products">
-    <div class="product">
-      <img src="t-shirt.jpg" alt="T-shirt de l'Ynov Formula 1 racing team">
-      <h3>T-shirt officiel</h3>
+    <div class="service">
+      <img src="merch.png" alt="Merchandising">
+      <h3>Merchandising</h3>
       <p>Arborez fièrement les couleurs de l'Ynov Formula 1 racing team avec notre t-shirt officiel.</p>
       <button>Acheter maintenant</button>
     </div>
+    <div class="service">
+      <img src="moteur.png" alt="Moteur">
+      <h3>Moteur</h3>
+      <p>En Formule 1, le moteur joue un rôle clé dans la performance des voitures. Il doit être à la fois puissants et fiables pour permettre aux pilotes de performer sur la piste. De plus, les réglementations strictes en matière d'efficacité énergétique nous obligent à innover constamment dans ce domaine pour rester compétitives.</p>
+      <button>En savoir plus</button>
+    </div>
+  </div>
 
   <style>
     body {
@@ -44,25 +49,27 @@
       padding: 0;
     }
     .header {
-      background-color: #333;
+      background-color: black;
       color: white;
       padding: 20px;
       text-align: center;
     }
     .header h1 {
+      color: white;
       font-size: 48px;
       margin: 0;
     }
     .header p {
-      font-size: 18px;
+      font-size: 30px;
       margin: 0;
     }
     .about {
       display: flex;
+      color: white;
       align-items: center;
       justify-content: space-between;
-      background-color: #eee;
-      padding: 20px;
+      background-color: #16887f;
+      padding: 30px;
     }
     .about img {
       width: 200px;
@@ -73,6 +80,7 @@
     .about p {
       font-size: 18px;
       margin: 0;
+      justify-content: space-between;
       padding: 0 20px;
     }
     .services {
@@ -83,7 +91,7 @@
     }
     .service {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      width: 300px;
+      width: 47%;
       margin: 10px;
       text-align: center;
       background-color: white;
@@ -102,7 +110,7 @@
       margin: 10px;
     }
     .service button {
-      background-color: #333;
+      background-color: #16887f;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -110,31 +118,16 @@
       cursor: pointer;
     }
     .service button:hover {
-      background-color: #111;
+      background-color: #16887f;
     }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 20px;
-    }
-    .product {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      width: 300px;
-      margin: 10px;
-      text-align: center;
-      background-color: white;
-    }
-    .product img {
-      width: 100%;
+
+    .box {
+      width: 90%;
       height: 200px;
-      object-fit: cover;
+      margin: 2px;
+      margin-left: 50px;
     }
-    .product h3 {
-      font-size: 18px;
-      margin: 10px;
-    }
-    .product p {
-      font-size: 14px;
-      margin: 10px;
+
+    img {
+      height: 100%; /* takes the 100 % height of its container (.box div)*/
     }
